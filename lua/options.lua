@@ -41,3 +41,14 @@ vim.opt.whichwrap:append "<,>,[,],h,l"          -- keys allowed to move to the p
 vim.opt.iskeyword:append "-"                    -- treats words with `-` as single words
 vim.opt.formatoptions:remove { "c", "r", "o" }  -- This is a sequence of letters which describes how automatic formatting is to be done
 vim.opt.linebreak = true
+
+-- Show Non-Printing characters
+vim.opt.listchars = 'eol:⏎,tab:▸ ,trail:•,extends:»,precedes:«,nbsp:␣' -- characters to show invisible characters
+vim.opt.list = true
+
+-- Nord theme options
+vim.g.nord_contrast = true
+vim.g.nord_borders = true
+vim.g.nord_cursorline_transparent = true
+vim.g.nord_italic = false
+vim.g.nord_bold = false
